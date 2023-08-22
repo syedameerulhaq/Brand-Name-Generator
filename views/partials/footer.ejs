@@ -1,0 +1,16 @@
+</main>
+
+<footer>
+  <!-- Step 4 - Add a dynamic year to the footer using JS. -->
+<% const date = new Date(); %>
+
+<%let day = date.getDate(); %>
+<%let month = date.getMonth() + 1; %>
+<%let year = date.getFullYear(); %>
+
+<%let currentDate = `${day}-${month}-${year}`; %>
+  <p>Copyright © <%= currentDate %></p>
+</footer>
+</body>
+
+</html>
